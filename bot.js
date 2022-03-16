@@ -8,7 +8,7 @@ const bot = new Client();
 
 bot.login(process.env.BOT_TOKEN);
 
-mongoose.connect(process.env.MONGO_URI,
+mongoose.connect(process.env.MONGO_URL,
   { useNewUrlParser: true, useUnifiedTopology: true },
   (error) => error
     ? console.log('Failed to connect to database')
